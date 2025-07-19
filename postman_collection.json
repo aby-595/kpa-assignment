@@ -1,0 +1,85 @@
+
+	"info": {
+		"_postman_id": "8d49d2dd-032f-472a-8684-1904e0c88ec1",
+		"name": "Aby_KPA_Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46886194",
+		"_collection_link": "https://abydanielvarghese.postman.co/workspace/ABY-DANIEL-VARGHESE's-Workspace~e1df1f6e-c58d-4e07-8d7a-19eb47c1d96a/collection/46886194-8d49d2dd-032f-472a-8684-1904e0c88ec1?action=share&source=collection_link&creator=46886194"
+	},
+	"item": [
+		{
+			"name": "Create Wheel Specification",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"wheel_number\": \"W002\",\r\n  \"diameter\": 910.0,\r\n  \"width\": 134.0,\r\n  \"material\": \"Alloy\",\r\n  \"inspection_date\": \"2025-07-20\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/wheel-spec",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"wheel-spec"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Bogie Checksheet",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"bogie_number\": \"BG002\",\r\n  \"inspector_name\": \"Aby Daniel\",\r\n  \"status\": \"OK\",\r\n  \"checked_on\": \"2025-07-20\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/bogie-check\n",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"bogie-check\n"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
